@@ -15,7 +15,7 @@ const l = {
       r.el.dispatchEvent(t);
     }
   }
-}, p = ["mousedown", "touchstart"], E = ["mousemove", "touchmove"], y = ["mouseup", "touchend"], T = function(r, e, s) {
+}, p = ["mousedown"], E = ["mousemove"], y = ["mouseup"], T = function(r, e, s) {
   let t = r, a = !0, m = window;
   typeof e.value == "boolean" ? a = e.value : typeof e.value == "object" ? (typeof e.value.target == "string" ? (t = r.querySelector(e.value.target), t || console.error("There is no element with the current target value.")) : typeof e.value.target < "u" && console.error(`The parameter "target" should be either 'undefined' or 'string'.`), typeof e.value.container == "string" ? (m = document.querySelector(e.value.container), m || console.error("There is no element with the current container value.")) : typeof e.value.container < "u" && console.error(`The parameter "container" should be be either 'undefined' or 'string'.`), typeof e.value.active == "boolean" ? a = e.value.active : typeof e.value.active < "u" && console.error(`The parameter "active" value should be either 'undefined', 'true' or 'false'.`)) : typeof e.value < "u" && console.error("The passed value should be either 'undefined', 'true' or 'false' or 'object'.");
   const g = function(u, d) {

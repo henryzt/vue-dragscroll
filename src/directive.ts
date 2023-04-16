@@ -1,9 +1,9 @@
 import u from './utils'
 import type { DirectiveBinding, VNode } from 'vue'
 
-const POINTER_START_EVENTS = ['mousedown', 'touchstart']
-const POINTER_MOVE_EVENTS = ['mousemove', 'touchmove']
-const POINTER_END_EVENTS = ['mouseup', 'touchend']
+const POINTER_START_EVENTS = ['mousedown']
+const POINTER_MOVE_EVENTS = ['mousemove']
+const POINTER_END_EVENTS = ['mouseup']
 
 const init = function (el: Element, binding: DirectiveBinding, vnode: VNode) {
   // Default parameters
